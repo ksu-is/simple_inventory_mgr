@@ -22,7 +22,7 @@
 - [x] Add input validation and user-friendly prompts
 
 ### Step 4: Implement Each Feature
-- [ ] Add new SKUs
+- [x] Add new SKUs
 
 - [ ] Add lots with cost and quantity
 

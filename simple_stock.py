@@ -31,3 +31,11 @@ while True:
             price = float(input("Enter sale price: "))
             inventory[sku_name] = {"price": price, "lots": []}
             print("SKU added.")
+
+    elif choice == "4":
+        for sku in inventory:
+            price = inventory[sku]["price"]
+            print(f"\nSKU: {sku}")
+            print(f"  Sale Price: ${price:.2f}")
+            for lot in inventory[sku]["lots"]:
+                print(f"    Lot - Cost: ${lot['cost']} | Qty: {lot['qty']}")
