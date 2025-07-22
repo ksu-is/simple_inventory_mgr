@@ -2,16 +2,19 @@
 ## Project Roadmap
 
 ### Step 1: Plan the Structure
- - [ ] Decide what the inventory manager should do
+ - [x] Decide what the inventory manager should do
 
- - [ ] List out basic operations: add SKU, add lots, edit price, view data, save to file
+ - [x] Define file and location for data store
+
+- [x] List out basic operations: add SKU, add lots, edit price, view data, 
+ save to file
 
 ### Step 2: Set Up the Data Format
+- [ ] Design plain-text format for file storage
+
 - [ ] Choose Python dictionary to store SKU data
 
 - [ ] Use a list of dictionaries to track purchase lots
-
-- [ ] Design plain-text format for file storage
 
 ### Step 3: Build Basic Input Loop
 - [ ] Use while True loop to show options and take user input
