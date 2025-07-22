@@ -10,11 +10,11 @@
  save to file
 
 ### Step 2: Set Up the Data Format
-- [ ] Design plain-text format for file storage
+- [x] Design plain-text format for file storage
 
-- [ ] Choose Python dictionary to store SKU data
+- [x] Choose Python dictionary to store SKU data
 
-- [ ] Use a list of dictionaries to track purchase lots
+- [x] Use a list of dictionaries to track purchase lots
 
 ### Step 3: Build Basic Input Loop
 - [ ] Use while True loop to show options and take user input
