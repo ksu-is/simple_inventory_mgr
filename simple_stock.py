@@ -40,7 +40,7 @@ if os.path.exists(filename):
 
 # Define menu options
 while True:
-    print("\n-- Inventory Manager --")
+    print("\n\033[1;34m-- Inventory Manager --\033[0m")
     print("1. Add new SKU")
     print("2. Add purchase lot to SKU")
     print("3. Edit sale price")
