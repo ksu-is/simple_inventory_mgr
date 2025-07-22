@@ -9,6 +9,14 @@ filename = "inventory.txt"
 # Each value is another dictionary: {"price": 0.0, "lots": [{"cost": 0.0, "qty": 0}]}
 inventory = {}
 
+def save_inventory():
+    with open(filename, "w") as file:
+        for sku in inventory:
+            price = inventory[sku]["price"]
+            file.write(f"SKU: {sku} | Price: {price}\n")
+            for lot in inventory[sku]["lots"]:
+                file.write(f"Lot: {lot['cost']}, {lot['qty']}\n")
+
 # Define menu options
 while True:
     print("\n-- Inventory Manager --")
@@ -58,3 +66,8 @@ while True:
             print(f"  Sale Price: ${price:.2f}")
             for lot in inventory[sku]["lots"]:
                 print(f"    Lot - Cost: ${lot['cost']} | Qty: {lot['qty']}")
+
+    elif choice == "5":
+        save_inventory()
+        print("Inventory saved. Goodbye.")
+        break

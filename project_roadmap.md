@@ -31,7 +31,7 @@
  - [x] View full inventory with average cost calculation
 
 ### Step 5: Save and Load to File
-- [ ] Write inventory to inventory.txt
+- [x] Write inventory to inventory.txt
 
  - [ ] Load inventory from inventory.txt on startup
 
