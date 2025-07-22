@@ -32,6 +32,25 @@ while True:
             inventory[sku_name] = {"price": price, "lots": []}
             print("SKU added.")
 
+    elif choice == "2":
+        sku_name = input("Enter SKU to add lot to: ")
+        if sku_name not in inventory:
+            print("SKU not found.")
+        else:
+            cost = float(input("Enter cost of lot: "))
+            qty = float(input("Enter quantity in lot: "))
+            inventory[sku_name]["lots"].append({"cost": cost, "qty": qty})
+            print("Lot added.")
+
+    elif choice == "3":
+        sku_name = input("Enter SKU to edit price: ")
+        if sku_name not in inventory:
+            print("SKU not found.")
+        else:
+            price = float(input("Enter new sale price: "))
+            inventory[sku_name]["price"] = price
+            print("Price updated.")
+
     elif choice == "4":
         for sku in inventory:
             price = inventory[sku]["price"]

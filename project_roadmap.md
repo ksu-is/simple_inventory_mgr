@@ -24,11 +24,11 @@
 ### Step 4: Implement Each Feature
 - [x] Add new SKUs
 
-- [ ] Add lots with cost and quantity
+- [x] Add lots with cost and quantity
 
- - [ ] Edit sale price
+ - [x] Edit sale price
 
- - [ ] View full inventory with average cost calculation
+ - [x] View full inventory with average cost calculation
 
 ### Step 5: Save and Load to File
 - [ ] Write inventory to inventory.txt
