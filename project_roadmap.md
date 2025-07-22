@@ -28,7 +28,7 @@
 
  - [x] Edit sale price
 
- - [x] View full inventory with average cost calculation
+ - [x] View full inventory
 
 ### Step 5: Save and Load to File
 - [x] Write inventory to inventory.txt
@@ -37,3 +37,15 @@
 
 ### Step 6: Add Terminal Colors
  - [ ] Use ANSI escape codes for colored text output
+
+ ### Step 7: Add Average cost calculation in Inventory List
+ - [ ] Add Average cost calculation in Inventory List
+
+ ### Step 8: Edit Items
+ - [ ] Edit general SKU name
+ - [ ] Edit Lot cost and quantity
+
+ ### Step 9: Delete SKUs
+- [ ] Delete SKU
+ 
+ 
