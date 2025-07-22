@@ -22,3 +22,12 @@ while True:
 
     if choice not in ["1", "2", "3", "4", "5"]:
         print("Invalid choice. Try again.")
+    
+    if choice == "1":
+        sku_name = input("Enter SKU name: ")
+        if sku_name in inventory:
+            print("SKU already exists.")
+        else:
+            price = float(input("Enter sale price: "))
+            inventory[sku_name] = {"price": price, "lots": []}
+            print("SKU added.")
