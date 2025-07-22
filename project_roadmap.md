@@ -17,9 +17,9 @@
 - [x] Use a list of dictionaries to track purchase lots
 
 ### Step 3: Build Basic Input Loop
-- [ ] Use while True loop to show options and take user input
+- [x] Use while True loop to show options and take user input
 
-- [ ] Add input validation and user-friendly prompts
+- [x] Add input validation and user-friendly prompts
 
 ### Step 4: Implement Each Feature
 - [ ] Add new SKUs

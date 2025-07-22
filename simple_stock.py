@@ -10,8 +10,15 @@ filename = "inventory.txt"
 inventory = {}
 
 # Define menu options
-print("1. Add new SKU")
-print("2. Add purchase lot to SKU")
-print("3. Edit sale price")
-print("4. View inventory")
-print("5. Save and Exit")
+while True:
+    print("\n-- Inventory Manager --")
+    print("1. Add new SKU")
+    print("2. Add purchase lot to SKU")
+    print("3. Edit sale price")
+    print("4. View inventory")
+    print("5. Save and Exit")
+
+    choice = input("Choose an option: ")
+
+    if choice not in ["1", "2", "3", "4", "5"]:
+        print("Invalid choice. Try again.")
