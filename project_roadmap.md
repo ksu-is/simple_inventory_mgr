@@ -33,7 +33,7 @@
 ### Step 5: Save and Load to File
 - [x] Write inventory to inventory.txt
 
- - [ ] Load inventory from inventory.txt on startup
+ - [x] Load inventory from inventory.txt on startup
 
 ### Step 6: Add Terminal Colors
  - [ ] Use ANSI escape codes for colored text output

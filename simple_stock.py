@@ -1,3 +1,4 @@
+import os
 filename = "inventory.txt"
 
 # Inventory will be stored in plain text like this:
@@ -16,6 +17,26 @@ def save_inventory():
             file.write(f"SKU: {sku} | Price: {price}\n")
             for lot in inventory[sku]["lots"]:
                 file.write(f"Lot: {lot['cost']}, {lot['qty']}\n")
+
+if os.path.exists(filename):
+    with open(filename, "r") as file:
+        lines = file.readlines()
+        current_sku = ""
+        for line in lines:
+            line = line.strip()
+            if line.startswith("SKU:"):
+                parts = line.split("|")
+                current_sku = parts[0].replace("SKU:", "").strip()
+                sale_price = float(parts[1].replace("Price:", "").strip())
+                inventory[current_sku] = {
+                    "price": sale_price,
+                    "lots": []
+                }
+            elif line.startswith("Lot:"):
+                parts = line.replace("Lot:", "").strip().split(",")
+                cost = float(parts[0])
+                qty = float(parts[1])
+                inventory[current_sku]["lots"].append({"cost": cost, "qty": qty})
 
 # Define menu options
 while True:
