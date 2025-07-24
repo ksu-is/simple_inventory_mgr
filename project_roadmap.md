@@ -39,7 +39,7 @@
  - [ ] Use ANSI escape codes for colored text output
 
  ### Step 7: Add Average cost calculation in Inventory List
- - [ ] Add Average cost calculation in Inventory List
+ - [x] Add Average cost calculation in Inventory List
 
  ### Step 8: Edit Items
  - [ ] Edit general SKU name

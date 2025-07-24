@@ -17,6 +17,15 @@ def save_inventory():
             file.write(f"SKU: {sku} | Price: {price}\n")
             for lot in inventory[sku]["lots"]:
                 file.write(f"Lot: {lot['cost']}, {lot['qty']}\n")
+def get_avg_cost(lots):
+    total_cost = 0
+    total_qty = 0
+    for lot in lots:
+        total_cost += lot["cost"] * lot["qty"]
+        total_qty += lot["qty"]
+    if total_qty == 0:
+        return 0
+    return total_cost / total_qty
 
 if os.path.exists(filename):
     with open(filename, "r") as file:
@@ -83,8 +92,10 @@ while True:
     elif choice == "4":
         for sku in inventory:
             price = inventory[sku]["price"]
+            avg_cost = get_avg_cost(inventory[sku]["lots"]) 
             print(f"\nSKU: {sku}")
             print(f"  Sale Price: ${price:.2f}")
+            print(f"  Average Cost: \033[94m${avg_cost:.2f}\033[0m")
             for lot in inventory[sku]["lots"]:
                 print(f"    Lot - Cost: ${lot['cost']} | Qty: {lot['qty']}")
 
