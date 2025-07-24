@@ -26,7 +26,7 @@ This version runs in the terminal and saves your inventory data to a plain text 
 ### Run the Program
 
 ```bash
-python inventory_manager.py
+python simple_stock.py
 ```
 
 The program will continue running in a loop until you choose "Save and Exit".
@@ -36,9 +36,10 @@ The program will continue running in a loop until you choose "Save and Exit".
 ## File Structure
 
 ```
-inventory_manager.py   # Main script
+simple_stock.py        # Main script
 inventory.txt          # Data file (auto-generated after saving)
-README.md              # Project description and roadmap
+README.md              # Project description
+project_roadmap        # Project Roadmap
 ```
 
 
